@@ -1,0 +1,11 @@
+1,1,0,main.newBalanceA
+2,2,0,main.newBalanceB
+3,3,0,main.newBalanceC
+4,4,0,main.totalTransferred
+5,-1,0,main.oldBalanceA
+6,-1,0,main.oldBalanceB
+7,-1,0,main.oldBalanceC
+8,-1,0,main.transferAtoC
+9,-1,0,main.transferBtoC
+10,-1,0,main.enoughA
+11,-1,0,main.enoughB
