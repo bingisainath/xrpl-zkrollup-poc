@@ -1,0 +1,13 @@
+{
+  "wallet": "0x7086bE70ea7d1156ECB0930191e212C8b4AB3FD3",
+  "network": "xrplTestnet",
+  "timestamp": "2026-02-09T13:44:33.954Z",
+  "contracts": [
+    {
+      "address": "0x217ed120C132530fFBD27Cc2b748Bd366F7c935C",
+      "nonce": 0,
+      "bytecodeSize": 499,
+      "explorerUrl": "https://explorer.testnet.xrplevm.org/address/0x217ed120C132530fFBD27Cc2b748Bd366F7c935C"
+    }
+  ]
+}
