@@ -1,0 +1,36 @@
+{
+  "name": "zk-rollup-xrpl",
+  "version": "1.0.0",
+  "description": "Simple ZK Rollup implementation for XRPL EVM",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js --network xrpl-evm-devnet",
+    "deploy:testnet": "hardhat run scripts/deploy.js --network xrpl-evm-testnet",
+    "generate-proof": "node scripts/generate-proof.js",
+    "submit-batch": "hardhat run scripts/submit-batch.js --network xrpl-evm-testnet",
+    "full-demo": "npm run deploy && npm run generate-proof && npm run submit-batch"
+  },
+  "keywords": [
+    "zk-rollup",
+    "xrpl",
+    "evm",
+    "layer2",
+    "zero-knowledge"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0"
+  },
+  "optionalDependencies": {
+    "circomlib": "^2.0.5",
+    "snarkjs": "^0.7.0"
+  }
+}

@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Hardhat files
+cache/
+artifacts/
+typechain/
+typechain-types/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Build files
+build/
+dist/
+
+# Circom files
+circuits/build/
+circuits/*.r1cs
+circuits/*.sym
+circuits/*.wasm
+circuits/*.zkey
+circuits/*.wtns
+
+# ZK proof files
+proof-data.json
+deployment-info.json
+demo-results.json
+*.ptau
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Test coverage
+coverage/
+coverage.json
+
+# Temp files
+tmp/
+temp/

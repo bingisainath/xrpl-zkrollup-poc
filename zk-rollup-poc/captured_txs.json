@@ -1,0 +1,64 @@
+{
+  "accountA": {
+    "address": "0xf057956b77eb1d6b9b6da5eec06fd089f743e6c1",
+    "pubkeyId": "1"
+  },
+  "accountB": {
+    "address": "0xb91009ee8efe31a2a8be13c3d243e0bb3746801d",
+    "pubkeyId": "2"
+  },
+  "initialBalanceA": "1000",
+  "initialBalanceB": "500",
+  "initialNonceA": "0",
+  "initialNonceB": "0",
+  "transactions": [
+    {
+      "from": 0,
+      "to": 1,
+      "amount": "1000",
+      "nonce": "0",
+      "txHash": "0x43f0f30ee3d1198fcdd90c6db216012fb6fe31c5756fd48127b3a09f22e99383"
+    },
+    {
+      "from": 1,
+      "to": 0,
+      "amount": "1000",
+      "nonce": "0",
+      "txHash": "0x8cb8f8d4e9dd36e8bec4cc9c4f63adfd1fcfe934291d2e25bf5c95b632e2f272"
+    }
+  ],
+  "computedRoots": {
+    "oldStateRoot": "3016020",
+    "newStateRoot": "12057063"
+  },
+  "realTransactions": [
+    {
+      "from": "0xf057956b77eb1d6b9b6da5eec06fd089f743e6c1",
+      "to": "0xb91009ee8efe31a2a8be13c3d243e0bb3746801d",
+      "fromIdx": 0,
+      "toIdx": 1,
+      "value": "0.001",
+      "nonce": 1,
+      "txHash": "0x43f0f30ee3d1198fcdd90c6db216012fb6fe31c5756fd48127b3a09f22e99383",
+      "blockNumber": 5394362,
+      "gasUsed": "21000",
+      "timestamp": "2026-02-09T19:28:43.899Z",
+      "status": "confirmed",
+      "label": "Account A → Account B"
+    },
+    {
+      "from": "0xb91009ee8efe31a2a8be13c3d243e0bb3746801d",
+      "to": "0xf057956b77eb1d6b9b6da5eec06fd089f743e6c1",
+      "fromIdx": 1,
+      "toIdx": 0,
+      "value": "0.001",
+      "nonce": 0,
+      "txHash": "0x8cb8f8d4e9dd36e8bec4cc9c4f63adfd1fcfe934291d2e25bf5c95b632e2f272",
+      "blockNumber": 5394408,
+      "gasUsed": "21000",
+      "timestamp": "2026-02-09T19:33:05.496Z",
+      "status": "confirmed",
+      "label": "Account B → Account A"
+    }
+  ]
+}

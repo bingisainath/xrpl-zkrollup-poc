@@ -1,0 +1,31 @@
+{
+  "name": "zk-rollup-poc",
+  "version": "1.0.0",
+  "description": "ZK-Rollup Proof of Concept using real testnet transactions",
+  "scripts": {
+    "compile:contracts": "npx hardhat compile",
+    "compile:circuit": "bash scripts/1_compile_circuit.sh",
+    "ceremony": "bash scripts/2_setup_ceremony.sh",
+    "generate:input": "node scripts/generate_input.js",
+    "generate:proof": "node scripts/3_generate_proof.js",
+    "deploy": "npx hardhat run scripts/4_deploy.js --network xrplEvmSidechain",
+    "deploy:sepolia": "npx hardhat run scripts/4_deploy.js --network sepolia",
+    "submit": "npx hardhat run scripts/5_submit_rollup.js --network xrplEvmSidechain",
+    "submit:sepolia": "npx hardhat run scripts/5_submit_rollup.js --network sepolia",
+    "test": "npx hardhat test",
+    "frontend": "cd frontend && npx vite"
+  },
+  "dependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "circomlib": "^2.0.5",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "hardhat": "^2.19.0",
+    "snarkjs": "^0.7.3"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "chai": "^4.3.0"
+  }
+}
